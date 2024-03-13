@@ -1,0 +1,38 @@
+﻿apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: gestaoapi
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: gestaoapi
+  template:
+    metadata:
+      labels:
+        app: gestaoapi
+    spec:
+      containers:
+        - name: gestaoapi
+          image: andreleaos/techapi:latest
+          ports:
+            - containerPort: 80
+          env:
+            - name: MYSQL_HOST
+              value: "mysqlserver"
+            - name: MYSQL_PORT
+              value: "3306"
+---
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: gestaoapi-service
+spec:
+  selector:
+    app: gestaoapi
+  ports:
+    - protocol: TCP
+      port: 8082
+      targetPort: 80
+  type: NodePort  

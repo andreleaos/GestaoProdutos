@@ -1,0 +1,33 @@
+﻿apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mysqlserver
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: mysqlserver
+  template:
+    metadata:
+      labels:
+        app: mysqlserver
+    spec:
+      containers:
+        - name: mysqlserver
+          image: andreleaos/techsqldb:latest
+          ports:
+            - containerPort: 3306
+---
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: mysqlserver
+spec:
+  selector:
+    app: mysqlserver
+  ports:
+    - protocol: TCP
+      port: 3308
+      targetPort: 3306
+  type: NodePort  

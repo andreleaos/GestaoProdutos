@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "IdgAAspmV3ZRdkKWdxND8KdsdeDXaNnegAel51126S3vO4PN2VDAqHAxiNvYTu6yXj7Y6mhqbjf4pnbTMJ35SQ==",
+  "dgSpecHash": "vth+yd3yr5H98vOe3TM2z+KvhBCre5JSF9WnTtyuGfsV3cfCfDceEL1oALu3BtOrx3okzSsNLZyiY7FS9thXtQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\andre\\source\\repos\\GestaoProdutos\\GestaoProdutos\\GestaoProdutos.csproj",
+  "projectFilePath": "C:\\Repo\\GestaoProdutos\\GestaoProdutos\\GestaoProdutos.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\andre\\.nuget\\packages\\bouncycastle.cryptography\\2.2.1\\bouncycastle.cryptography.2.2.1.nupkg.sha512",
     "C:\\Users\\andre\\.nuget\\packages\\dapper\\2.1.28\\dapper.2.1.28.nupkg.sha512",

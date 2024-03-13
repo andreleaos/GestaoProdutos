@@ -1922,11 +1922,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\andre\\source\\repos\\GestaoProdutos\\GestaoProdutos\\GestaoProdutos.csproj",
+      "projectUniqueName": "C:\\Repo\\GestaoProdutos\\GestaoProdutos\\GestaoProdutos.csproj",
       "projectName": "GestaoProdutos",
-      "projectPath": "C:\\Users\\andre\\source\\repos\\GestaoProdutos\\GestaoProdutos\\GestaoProdutos.csproj",
+      "projectPath": "C:\\Repo\\GestaoProdutos\\GestaoProdutos\\GestaoProdutos.csproj",
       "packagesPath": "C:\\Users\\andre\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\andre\\source\\repos\\GestaoProdutos\\GestaoProdutos\\obj\\",
+      "outputPath": "C:\\Repo\\GestaoProdutos\\GestaoProdutos\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\andre\\AppData\\Roaming\\NuGet\\NuGet.Config",
