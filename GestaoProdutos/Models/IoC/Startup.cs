@@ -15,8 +15,8 @@ namespace GestaoProdutos.Models.IoC
             string connStr = configuration.GetConnectionString("filmeDb");
 
             services.AddScoped<IDbConnection>(provider => new MySqlConnection(connStr));
-            services.AddTransient<IFilmeRepository, FilmeRepository>();
-            services.AddTransient<IFilmeService, FilmeService>();
+            services.AddScoped<IFilmeRepository, FilmeRepository>();
+            services.AddScoped<IFilmeService, FilmeService>();
         }
     }
 }
