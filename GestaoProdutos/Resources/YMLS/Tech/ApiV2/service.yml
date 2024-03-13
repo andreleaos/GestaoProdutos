@@ -1,0 +1,12 @@
+﻿apiVersion: "v1"
+kind: Service
+metadata:
+  name: gameapi-service
+spec:
+  selector:
+    app: gameapi
+  ports:
+  - protocol: TCP
+    port: 8088
+    targetPort: 80
+  type: NodePort  

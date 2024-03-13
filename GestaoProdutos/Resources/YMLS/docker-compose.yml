@@ -1,0 +1,22 @@
+version: "3.9"
+services:
+  mysqlserver:
+    image: andreleaos/mysqlserver:1.0
+    container_name: mysqlserver
+    networks:
+      - compose-bridge
+    ports:
+      - 3308:3306
+  gestaoapi:
+    image: andreleaos/gestaoapi:2.0
+    container_name: gestaoapi
+    networks:
+      - compose-bridge
+    ports:
+      - 8082:80
+    depends_on:
+      - mysqlserver	
+
+networks:
+  compose-bridge:
+    driver: bridge

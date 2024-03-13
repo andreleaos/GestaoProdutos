@@ -1,0 +1,26 @@
+﻿apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: mysql-config
+data:
+  create_table.sql: |
+    CREATE TABLE IF NOT EXISTS filme (
+        id INT AUTO_INCREMENT PRIMARY KEY,
+        nome VARCHAR(255) NOT NULL,
+        genero VARCHAR(100) NOT NULL,
+        ano INT NOT NULL
+    );
+
+  insert_data.sql: |
+    INSERT INTO filme (nome, genero, ano) VALUES 
+    ('Titanic', 'Drama', 1997),
+    ('Cidade dos Anjos', 'Romance', 1998),
+    ('Gente Grande', 'Comedia', 2010),
+    ('Shrek 2', 'Animacao', 2004),
+    ('ToyStory', 'Animacao', 1995),
+    ('Divertidamente', 'Animacao', 2013),
+    ('Click', 'Comedia', 2006),
+    ('Matrix', 'Acao', 1999),
+    ('Ate o ultimo homem', 'Documentario', 2016),
+    ('Vingadores Ultimato', 'Acao', 2019),
+    ('Vingadores Guerra Infinita', 'Acao', 2017);
